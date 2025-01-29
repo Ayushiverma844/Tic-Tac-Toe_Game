@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #4ba3c3;
+}
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vmin;
+  font-size: 30px;
+}
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #4ba3c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 95vh;
+}
+.board {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5vmin;
+}
+.box {
+  width: 18vmin;
+  height: 18vmin;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgb(0, 0, 0, 0.3);
+  font-size: 7vmin;
+  cursor: pointer;
+  color: #b0413e;
+  background-color: #ffffc7;
+}
+h1 {
+  text-align: center;
+  font-size: 9vh;
+  font-weight: bold;
+  margin-bottom: 6vh;
+  color: rgb(6, 6, 61);
+  text-decoration: underline;
+}
+#reset-button {
+  margin-top: 3vh;
+  padding: 1vmin 3vmin;
+  border: none;
+  background-color: rgb(28, 27, 27);
+  border-radius: 0.5rem;
+  color: #fff;
+  height: 6vh;
+  font-size: 3vh;
+  border: 1px solid black;
+}
+
+/* Winner Message Styling */
+#winner-message {
+  margin-top: 2vh;
+  text-align: center;
+  font-size: 4vh;
+  font-weight: bold;
+  color: rgb(28, 27, 27);
+}
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+
+/* For small devices (phones) */
+@media (max-width: 600px) {
+  .board {
+    width: 90vmin;
+    height: 90vmin;
+  }
+
+  .box {
+    width: 30%;
+    height: 30%;
+    font-size: 4vmin;
+  }
+
+  h1 {
+    font-size: 6vh;
+  }
+  header h2 {
+    font-size: 5vh;
+  }
+
+  #reset-button,
+  #new-game-button {
+    font-size: 2vh;
+    padding: 1vmin 2vmin;
+  }
+
+  #winner-message {
+    font-size: 2.5vh;
+  }
+}
+
+/* For extra small devices (very small phones) */
+@media (max-width: 450px) {
+  .board {
+    gap: 1vmin;
+  }
+
+  .box {
+    font-size: 3.5vmin;
+  }
+
+  h1 {
+    font-size: 5vh;
+  }
+  header h2 {
+    font-size: 3vh;
+  }
+
+  #reset-button,
+  #new-game-button {
+    font-size: 1.8vh;
+    padding: 0.5vmin 1.5vmin;
+  }
+
+  #winner-message {
+    font-size: 2vh;
+  }
+}
+
+/* For larger devices (tablets and desktops) */
+@media (min-width: 1024px) {
+  .board {
+    width: 60vmin;
+    height: 60vmin;
+  }
+
+  .box {
+    width: 18vmin;
+    height: 18vmin;
+    font-size: 7vmin;
+  }
+
+  h1 {
+    font-size: 9vh;
+  }
+
+  #reset-button,
+  #new-game-button {
+    font-size: 3vh;
+    padding: 1vmin 3vmin;
+  }
+
+  #winner-message {
+    font-size: 3.5vh;
+  }
+}
